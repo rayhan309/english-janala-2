@@ -1,3 +1,20 @@
+const naime  = "rayhan"
+const passe = 300121;
+document.getElementById("get-start").addEventListener('click', () => {
+    const input = document.getElementById("name").value.toLowerCase();
+    const pass = Number(document.getElementById("pass").value);
+    if (input !== naime) {
+        alert ("❌ Please valid name!")
+        return;
+    }
+    if (pass !== passe) {
+        alert ("❌ Please valid password!")
+        return;
+    }
+    else{
+        alert(`💚 ${naime} Welcome to the English Janala website!`)
+    }
+})
 const createElements = arr => {
     const ar = arr.map((el) => `<span class="btn text-gray-500 bg-gray-100">${el}</span>`);
     return ar.join(" ");
