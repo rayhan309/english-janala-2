@@ -71,11 +71,29 @@
             </div>
         </div>
      </section>
+     
      <!-- btn section  -->
       <section class="mb-8 w-11/12 mx-auto">
         <h1 class="text-3xl text-[#181818] font-bold text-center"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies</h1>
         <div id="btn-container" class=" mt-7 flex justify-center gap-5 flex-wrap">         
         </div>
+        <!-- search box -->
+        <section class="flex justify-center items-center pt-10 pb-4">
+          <div class="join">
+            <div>
+              <label class="input validator join-item">
+                <input id="input" type="text" placeholder="Search Validator" required />
+              </label>
+            </div>
+            <button id="search-btn" class="btn btn-primary join-item">Search</button>
+          </div>
+        </section>
+
+        <!-- loading animetion -->
+      <section id="loadings" class="flex justify-center items-center py-10 hidden">
+      <span class="loading loading-spinner text-primary"></span>
+     </section>
+
         <div id="card-container" class="mt-10 min-h-24 bg-slate-100 grid grid-cols-1 md:grid-cols-3 gap-5 p-4 rounded-xl">
           <div class="space-y-5 my-10 col-span-full"> 
             <p class="text-lg text-center font-normal text-[#79716B]">আপনি এখনো কোন Lesson Select করেন নি</p>
